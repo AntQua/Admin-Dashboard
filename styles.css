@@ -1,0 +1,206 @@
+:root {
+  --blue: #38bdf8;
+  --black: #272727;
+  --white: #ffffff;
+  --menu-active: #0369a1;
+  --font-size: 18px;
+}
+
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  /* A system font stack so things load nice and quick! */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--black);
+  /* text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07); */
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-size: 340px, auto;
+  min-height: calc(100vh - 100px);
+  margin: 0;
+  color: var(--white);
+  background: var(--white);
+  background-attachment: fixed;
+  /* letter-spacing: -1px; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 5px 0;
+  color: var(--black);
+}
+
+
+.wrapper{
+  display: grid;
+  grid-template-columns: auto 1fr; /*300px to auto*/
+  height: 100vh;
+  /* border: 2px solid red; */
+}
+
+
+/* -----------SIDEBAR NAV--------------*/
+
+.sidebar{
+  background: var(--blue);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: start;
+  padding-right: 50px;  
+}
+
+.logo{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  /* border: 2px solid green; */
+}
+
+.logo > h3{
+  color: var(--white);
+}
+
+.menus{
+  display: grid;
+  grid-template-rows: auto 1fr ;
+  grid-gap: 10px;
+  /* border: 2px solid yellow; */
+}
+
+.menu-top{
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin-bottom: 25px;
+  /* border: 2px solid blue;   */
+}
+
+.menu-bottom{
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  padding: 10px;
+  /* border: 2px solid purple; */
+}
+
+.menus > * > * > a{
+  color: var(--white);
+  font-size: var(--font-size);
+  text-decoration: none; 
+  padding-left: 10px;
+}
+
+.menus > * >* > a:hover{
+  color: var(--menu-active);
+}
+
+.menus > * >* a.active{
+  color: var(--menu-active);
+}
+
+
+/* -----------CONTENT--------------*/
+
+.content{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  
+}
+
+/* -----------PROFILE--------------*/
+
+.profile{
+  display: grid;
+  grid-template-rows: auto;
+  color: var(--black);
+  border: 2px solid blue;
+}
+
+/* -----------CARDS--------------*/
+
+.cards{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  border: 2px solid red;
+}
+
+/* -----------CARDS Projects--------------*/
+
+.cards-projects{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: 2px solid green;
+}
+
+.title{
+  display: grid;
+  grid-template-rows: auto;
+  color: var(--black);
+  border: 2px solid yellow; 
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 10px;
+  border: 2px solid orange;
+}
+
+.project{
+  color: var(--black);
+  border: 2px solid black;
+}
+
+/* -----------CARDS Side Cards--------------*/
+
+.cards-sideCards{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  border: 2px solid orange;
+}
+
+
+.announcements{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: 2px solid purple;
+}
+
+.cardAnnoucements{
+  display: grid;
+  grid-template-rows: auto;
+  border: 2px solid yellow;
+}
+
+.trending{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: 2px solid purple;
+}
+
+.cardTrending{
+  display: grid;
+  grid-template-rows: auto;
+  border: 2px solid yellow;
+}
