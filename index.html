@@ -1,133 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Admin Dashboard</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="wrapper">
-        <nav class="sidebar">
-            <div class="logo">
-                <img src="./icons/dashboard_white_36dp.svg" alt="dashboard logo" />
-                <h3>Dashboard</h3>
+      <nav class="sidebar">
+        <div class="logo">
+          <img src="./icons/dashboard_white_36dp.svg" alt="dashboard logo" />
+          <h3>Dashboard</h3>
+        </div>
+        <div class="menus">
+          <div class="menu-top">
+            <div>
+              <img src="./icons/home_white_18dp.svg" alt="home icon" />
+              <a class="active" href="#">Home</a>
             </div>
-            <div class="menus">
-                <div class="menu-top">
-                    <div>
-                        <img src="./icons/home_white_18dp.svg" alt="home icon" />
-                        <a class="active" href="#">Home</a>
-                    </div>
-                    <div>
-                        <img src="./icons/contact_mail_white_18dp.svg" alt="profile icon" />
-                        <a href="#">Profile</a>
-                    </div>
-                    <div>
-                        <img src="./icons/mode_comment_white_18dp.svg" alt="messages icon" />
-                        <a href="#">Messages</a>
-                    </div>
-                    <div>
-                        <img src="./icons/watch_later_white_18dp.svg" alt="history icon" />
-                        <a href="#">History</a>
-                    </div>
-                    <div>
-                        <img src="./icons/folder_copy_white_18dp.svg" alt="tasks icon" />
-                        <a href="#">Tasks</a>
-                    </div>
-                    <div>
-                        <img src="./icons/groups_white_18dp.svg" alt="communities icon" />
-                        <a href="#">Communities</a>
-                    </div>
+            <div>
+              <img
+                src="./icons/contact_mail_white_18dp.svg"
+                alt="profile icon"
+              />
+              <a href="#">Profile</a>
+            </div>
+            <div>
+              <img
+                src="./icons/mode_comment_white_18dp.svg"
+                alt="messages icon"
+              />
+              <a href="#">Messages</a>
+            </div>
+            <div>
+              <img
+                src="./icons/watch_later_white_18dp.svg"
+                alt="history icon"
+              />
+              <a href="#">History</a>
+            </div>
+            <div>
+              <img src="./icons/folder_copy_white_18dp.svg" alt="tasks icon" />
+              <a href="#">Tasks</a>
+            </div>
+            <div>
+              <img src="./icons/groups_white_18dp.svg" alt="communities icon" />
+              <a href="#">Communities</a>
+            </div>
+          </div>
+          <div class="menu-bottom">
+            <div>
+              <img src="./icons/settings_white_18dp.svg" alt="settings icon" />
+              <a href="#">Settings</a>
+            </div>
+            <div>
+              <img
+                src="./icons/help_center_white_18dp.svg"
+                alt="support icon"
+              />
+              <a href="#">Support</a>
+            </div>
+            <div>
+              <img
+                src="./icons/verified_user_white_18dp.svg"
+                alt="privacy icon"
+              />
+              <a href="#">Privacy</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main class="content">
+        <div class="profile">
+         <div class="upper-section">
+            <div class="search">
+                <img src="./icons/search-outline.svg" alt="search icon" />
+                <input
+                  type="text"
+                  name="search"
+                  id=""
+                />
+              </div>
+              <div class="menu-profile-right">
+                <img class="notifications" src="./icons/Notifications.webp" alt="Notifications icon" />
+                <img class="profile-man" src="./icons/profile-man.png" alt="bussiness man icon" />
+                <h2>Morgan Oakley</h2>
+              </div>
+         </div>
 
-                </div>
-                <div class="menu-bottom">
-                    <div>
-                        <img src="./icons/settings_white_18dp.svg" alt="settings icon" />
-                        <a href="#">Settings</a>
-                    </div>
-                    <div>
-                        <img src="./icons/help_center_white_18dp.svg" alt="support icon" />
-                        <a href="#">Support</a>
-                    </div>
-                    <div>
-                        <img src="./icons/verified_user_white_18dp.svg" alt="privacy icon" />
-                        <a href="#">Privacy</a>
-                    </div>
-                </div>
+         <div class="lower-section">
+            <div class="bottom-profile-left">
+                <img class="profile-man-big" src="./icons/profile-man.png" alt="bussiness man icon" />
+               <div >
+                <h4>Hi there,</h4>
+                <h1>Morgon Oakley (@morgan)</h1>
+               </div>
+              </div>
+              <div class="botton-menu-right">
+                <a>New</a>
+                <a>Upload</a>
+                <a>Share</a>
+              </div>
+         </div>
+        </div>
+        <div class="cards">
+          <div class="cards-projects">
+            <div class="title">
+              <h2>Your Projects</h2>
             </div>
-        </nav>
-        <main class="content">
-            <div class="profile">
-                <h2>PROFILE ELEMENTS</h2>
-                <h2>2 ROWS</h2>
+            <div class="projects">
+              <div class="project">
+                <h2>Super Cool Project</h2>
+                <p>
+                  Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin
+                  nibh erat, id facilisis felis accumsan nec.
+                </p>
+              </div>
+              <div class="project">
+                <h2>Less Cool Project</h2>
+                <p>
+                  Nullam condimentum ipsum ut lectus vehicula consectetur.
+                  Quisque sed dolor tincidunt, consectetur sapien et, facilisis
+                  dolor. Duis sem purus, dignissim ut sapien in, varius
+                  pellentesque lacus.
+                </p>
+              </div>
+              <div class="project">
+                <h2>Impossible App</h2>
+                <p>
+                  In hac habitasse platea dictumst. Vivamus dictum rutrum arcu,
+                  a placerat velit sagittis id.
+                </p>
+              </div>
+              <div class="project">
+                <h2>Easy Peasy App</h2>
+                <p>
+                  Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim
+                  urna get accumsan aliquam. Curabitur dignissim nisi in tortor
+                  commodo, ac bibendum magna tincidunt.
+                </p>
+              </div>
+              <div class="project">
+                <h2>Ad Blocker</h2>
+                <p>
+                  Quisque get rutrum nisl. Nam augue justo, cursus vitae metus
+                  vel, pharetra hendrerit felis. Aliquam sed malesuada eros.
+                </p>
+              </div>
+              <div class="project">
+                <h2>Money Maker</h2>
+                <p>
+                  Present convallis, libero quis congue elementum, nunc ante
+                  faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                  Pellentesque mollis nec sem vel aliquam.
+                </p>
+              </div>
             </div>
-            <div class="cards">
-                <div class="cards-projects">
-                    <div class="title">
-                        <h2>Your Projects</h2>
-                    </div>
-                    <div class="projects">
-                        <div class="project">
-                            <h2>Super Cool Project</h2>
-                            <p>Sed tempus ut lacus ut scelerisque.
-                                Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
-                        </div>
-                        <div class="project">
-                            <h2>Less Cool Project</h2>
-                            <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, 
-                                consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius 
-                                pellentesque lacus.</p>
-                        </div>
-                        <div class="project">
-                            <h2>Impossible App</h2>
-                            <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
-                        </div>
-                        <div class="project">
-                            <h2>Easy Peasy App</h2>
-                            <p>Etiam cursus eros ac efficitur fringilla.
-                                Vestibulum dignissim urna get accumsan aliquam. Curabitur dignissim nisi in tortor 
-                                commodo, ac bibendum magna tincidunt.</p>
-                        </div>
-                        <div class="project">
-                            <h2>Ad Blocker</h2>
-                            <p>Quisque get rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. 
-                                Aliquam sed malesuada eros.</p>
-                        </div>
-                        <div class="project">
-                            <h2>Money Maker</h2>
-                            <p>Present convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque 
-                                tortor purus sit amet ex.
-                                Pellentesque mollis nec sem vel aliquam.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cards-sideCards">
-                    <div class="announcements">
-                        <div class="titleAnnouncements">
-                            <h2>Annoucements</h2>
-                        </div>
-                        <div class="cardAnnoucements">
-                            <div><h2>CARD ANNOUCEMENTS</h2></div>
-                        </div>
-                    </div>
-                    <div class="trending">
-                        <div class="titleTrending">
-                            <h2>Trending</h2>
-                        </div>
-                        <div class="cardTrending">
-                            <div><h2>CARD TRENDING</h2></div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="cards-sideCards">
+            <div class="announcements">
+              <div class="titleAnnouncements">
+                <h2>Annoucements</h2>
+              </div>
+              <div class="cardAnnoucements">
+                <div><h2>CARD ANNOUCEMENTS</h2></div>
+              </div>
             </div>
-        </main>
+            <div class="trending">
+              <div class="titleTrending">
+                <h2>Trending</h2>
+              </div>
+              <div class="cardTrending">
+                <div><h2>CARD TRENDING</h2></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-
-</body>
-
+  </body>
 </html>
