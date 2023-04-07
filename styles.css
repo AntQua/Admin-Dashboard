@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,500&family=Open+Sans:wght@400;600&display=swap');
+
 :root {
   --blue: #38bdf8;
   --black: #272727;
@@ -142,6 +144,7 @@ h6 {
   grid-template-columns: 2fr 1fr;
   grid-gap: 10px;
   border: 2px solid red;
+  background-color: #E2E8F0;
 }
 
 /* -----------CARDS Projects--------------*/
@@ -149,28 +152,41 @@ h6 {
 .cards-projects{
   display: grid;
   grid-template-rows: auto 1fr;
-  border: 2px solid green;
+
+  
 }
 
 .title{
   display: grid;
   grid-template-rows: auto;
-  color: var(--black);
-  border: 2px solid yellow; 
+  color: var(--black); 
+  margin: 20px;
+  margin-bottom: 0px;
 }
 
 .projects{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /*grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
   grid-gap: 10px;
-  border: 2px solid orange;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project{
   color: var(--black);
-  border: 2px solid black;
+  border-left: 5px solid #F0B429;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px -3px rgba(0, 0, 0, 0.4);
 }
 
+.project > p {
+  color: #636363;
+  font-family: Montserrat;
+  font-weight: 100;
+  font-size: 1.1rem;
+}
 /* -----------CARDS Side Cards--------------*/
 
 .cards-sideCards{
