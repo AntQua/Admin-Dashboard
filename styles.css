@@ -28,11 +28,10 @@ html {
 
 body {
   background-size: 340px, auto;
-  min-height: calc(100vh - 100px);
+  height: 100vh;
   margin: 0;
   color: var(--white);
   background: var(--white);
-  background-attachment: fixed;
 }
 
 h1,
@@ -240,9 +239,10 @@ h6 {
 
 .cards {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-gap: 10px;
   background-color: #E2E8F0;
+ padding: 20px;
 }
 
 /* -----------CARDS Projects--------------*/
@@ -256,13 +256,12 @@ h6 {
   display: grid;
   grid-template-rows: auto;
   color: var(--black);
-  margin: 20px;
-  margin-bottom: 0px;
+  padding-bottom: 5px;
 }
 
 .projects {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 15px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -275,12 +274,12 @@ h6 {
 .project {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
-  grid-template-columns: 1fr 1fr;
   color: var(--black);
   border-left: 5px solid #F0B429;
   background-color: white;
-  margin: 10px;
-  padding: 20px;
+  height: 200px;
+  width: 300px;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 2px 4px 10px -3px rgba(0, 0, 0, 0.4);
 }
@@ -312,12 +311,16 @@ h6 {
 }
 
 .titleAnnouncements {
-  margin: 20px 20px 7px 50px;
+  display: grid;
+  grid-template-rows: auto;
+  color: var(--black);
+  padding-bottom: 5px;
 }
 
 .announcements {
   display: grid;
   grid-template-rows: auto 1fr;
+  margin-bottom: 10px;
 }
 
 .cardAnnoucements {
@@ -326,8 +329,7 @@ h6 {
   background-color: white;
   border-radius: 10px;
   padding-bottom: 20px;
-  margin: 0px 50px 0px 50px;
-  box-shadow: 2px 4px 10px -3px rgba(0, 0, 0, 0.4);
+   box-shadow: 2px 4px 10px -3px rgba(0, 0, 0, 0.4);
 }
 
 .cardAnnoucements>div {
@@ -345,7 +347,10 @@ h6 {
 }
 
 .titleTrending {
-  margin: 20px 20px 7px 50px;
+  display: grid;
+  grid-template-rows: auto;
+  color: var(--black);
+  padding-bottom: 5px;
 }
 
 .cardTrending {
@@ -355,7 +360,6 @@ h6 {
   border-radius: 10px;
   padding-bottom: 20px;
   padding-top: 20px;
-  margin: 0px 50px 10px 50px;
   box-shadow: 2px 4px 10px -3px rgba(0, 0, 0, 0.4);
 }
 
